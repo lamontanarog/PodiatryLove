@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Ibarra+Real+Nova:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Ibarra+Real+Nova:ital@0;1&family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Edu+SA+Beginner&family=Ibarra+Real+Nova:ital@0;1&family=Josefin+Sans:wght@300&display=swap');
+/*Selector universal*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*menu navegable*/
+
+.navbar{
+    padding: 30px;
+    font-size: large;
+    display: inline;
+}
+.item-menu-gral{
+    text-decoration: none;
+    color: rgba(79, 22, 79, 0.684);
+    font-weight: bold;
+}
+#lista-menu-gral{
+    display: flex;
+    justify-content: space-evenly;
+    list-style:none;
+    cursor: pointer;
+}
+#logo-menu{
+    width: 80px;
+    margin: 0px;
+}
+/*Fin menu navegable */
+
+/*Main index */
+
+/*banner principal */
+#banner-principal {
+    border-radius: 5px;
+    width: 100%;
+    margin: 50px 0px;
+}
+
+/*seccion de patologias index */
+.articlePatologias{
+    padding: 5px;
+    margin: 20px;
+    text-align: center;
+}
+
+.article-patologias-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Ibarra Real Nova', serif;
+    word-spacing: -1px;
+}
+
+.article-patologias-subtitle {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 30px;
+}
+/*menu navegable hacia patologias desde index */
+
+.article-patologias-menu {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+#lista_menu_patologias {
+    display: flex;
+    justify-content: space-evenly;
+    list-style:none;
+    /*cursor: pointer;
+    display: flex;
+    list-style:none;
+    cursor: pointer; */
+}
+
+.article-patologias-item {
+    padding: 15px;
+    border: 20px;
+    margin-left: 50px;
+}
+.hiperv_nav_patologias {
+    text-decoration: none;
+    color: rgba(79, 22, 79, 0.684);
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding: 10px;
+    font-size: large;
+    margin-top: 10px;
+}
+/* fin menu navegable hacia patologias desde index */
+
+/* seccion videos educativos sobre patologias index */
+.videos_educativos_patologias {
+    display: grid;
+    grid-template-rows: 1,1fr;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    background-image: url("../assets/fondoPrueba.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.subt_iframe {
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    color: rgba(71, 61, 139, 0.863);
+}
+
+.button_iframe {
+    margin: 20px 0px 20px 40%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 6px;
+    border-color: rgba(173, 152, 152, 0.566);
+    color: rgb(255, 255, 255);
+    background-color: rgba(79, 22, 79, 0.684);
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+}
+/* fin seccion videos educativos sobre patologias index */
+/*Fin main index */
+
+/*Footer general */
+#footer{
+    margin-top: 5%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: url(../assets/rosita.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+#footer p{
+    letter-spacing: 2px;
+    font-weight: lighter;
+
+}
+
+.redesSociales{
+    cursor: pointer;
+}
+
+/*Fin Footer general */
+
+/*seccion prevencion CON GRID */
+#h1Prevencion{
+    margin-top: 25px;
+    padding: 15px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.padreTarjetasPrevencion{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,fr);
+    justify-items: center;
+}
+.card{
+    margin-top: 20px;
+}
+.img-card-prevencion {
+    width: 400px;
+    border-radius: 10px;
+}
+.parrafo-card-prevencion {
+    width: 100%;
+}
+
+/*Fin seccion prevencion */
+
+/*Seccion patologias con grid */
+.padreTarjetasPatologias {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(3,fr);
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.cardPato {
+    margin: 50px;
+}
+.img-card-patologias {
+    margin-left: 23%;
+    border-radius: 10px;
+}
+
+.title-patologias {
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.parrafo-patologias {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 20px;
+}
+
+.button-card-patologias {
+    padding: 10px;
+    margin-left: 45%;
+    font-size: 20px;
+    border-radius: 6px;
+    border-color: rgba(173, 152, 152, 0.566);
+    color: rgb(255, 255, 255);
+    background-color: rgba(79, 22, 79, 0.684);
+    cursor: pointer;
+}
+/*Fin seccion patologias */
+
+/*seccion contacto */
+#imgContacto {
+    margin: 0px 25%;
+}
+#contenedor-form{
+    background: url(../assets/fondoPrueba.jpg);
+    background-size: cover;
+    padding-top: 2%;
+    padding-bottom: 3%;
+
+}
+
+#formularioContacto{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    
+}
+
+.input {
+    margin: 1%;
+    width: 40%;
+}
+
+#buttonForm {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 6px;
+    border-color: rgba(173, 152, 152, 0.566);
+    color: rgb(255, 255, 255);
+    background-color: rgba(79, 22, 79, 0.684);
+    cursor: pointer;
+}
+/*Fin seccion contacto */
+
+/* seccion sobre mi */
+#imgSobreMi {
+    width: 100%;
+}
+
+.padreInformacion {
+    margin: 10%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.imgInformacion{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.cardAboutMe {
+    width: 25%;
+    border-style: groove;
+    padding: 5%;
+    margin: 2%;
+}
+/*Fin seccion sobre mi */
+
+
+/*css para mobile */
+@media only screen and (max-width: 576px) {
+    /*INDEX*/
+    /*menu navegable de patologias INDEX*/
+    .article-patologias-menu {
+        font-size: 10px;
+        margin-left: 30px;
+        justify-content: center;
+    }
+    #lista_menu_patologias{
+       flex-wrap: wrap;
+    }
+    .hiperv_nav_patologias{
+        padding: 0px;
+        font-size: small;
+
+    /*seccion videos educativos*/
+    }
+    .videos_educativos_patologias{
+        grid-template-columns: revert;
+        row-gap: 2%;
+        padding-bottom: 20px;
+    }
+    .subt_iframe {
+        margin-top: 15px;
+    }
+    .button_iframe{
+        margin-left: 30%;
+    }
+    /* FIN DEL INDEX*/
+    /*PREVENCION*/
+    .padreTarjetasPrevencion{
+        grid-template-columns: revert;
+        row-gap: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+    /* FIN PREVENCION*/
+
+    /*PATOLOGIAS*/
+    .padreTarjetasPatologias{
+        grid-template-columns: revert;
+        justify-content: center;
+    }
+    .title-patologias{
+        margin-left: 65px;
+    }
+    /* FIN PATOLOGIAS*/
+
+    /* CONTACTO */
+    #imgContacto{
+        margin: 0px;
+        width: 100%;
+    }
+    #contenedor-form{
+        padding-top: 10%;
+        padding-bottom: 20%;
+    }
+    /*FIN CONTACTO */
+
+    /* SOBRE MI */
+    .padreInformacion{
+        flex-direction: column;
+    }
+    .cardAboutMe{
+        width: 85%;
+    }
+    /* FIN SOBRE MI */
+}
