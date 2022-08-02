@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/logo.jpg" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Podiatry-Patologias</title>
 </head>
@@ -14,89 +17,108 @@
     <header>
         <nav class="navbar">
             <ul id="lista-menu-gral">
-                <li><a class="item-menu-gral" href="../index.html">Inicio</a></li>
-                <li><a class="item-menu-gral" href="prevencion.html">prevención</a></li>
-                <li><a class="item-menu-gral" href="#">patologias</a></li>
-                <li><a class="item-menu-gral" href="#footer">Redes Sociales</a></li>
-                <li><a class="item-menu-gral" href="contacto.html">Contacto</a></li>
-                <li><a class="item-menu-gral" href="aboutme.html">Sobre mí</a></li>
-                <li><img id="logo-menu" src="../img/logo.jpg" alt="Logo" /></li>
-            </ul>
+                <ul class="nav nav-tabs justify-content-center ">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/prevencion.html">Prevencion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active" href="#">patologias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Redes Sociales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/aboutme.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#">
+                            <img src="../img/logo.jpg" alt="" width="80">
+                        </a>
+                    </li>
+                </ul>
         </nav>
     </header>
 
     <h1 id="h1Prevencion">¿Queres conocer algunas patologias podologicas?</h1>
     <main>
         <div class="padreTarjetasPatologias">
-            <section class="cardPato">
-                <article id="infeccionesPorHongos">
-                    <h3 class="title-patologias"> Infecciones por hongos</h3>
-                    <img class="img-card-patologias" src="../img/primeraPatologia.jpg" alt="infeccionesPorHongos">
-                    <p class="parrafo-patologias"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolorem deleniti adipisci soluta facilis, ab accusantium autem voluptates voluptatem at, mollitia atque nesciunt quas unde ad possimus dolores provident enim. </p>
-                </article>
-                <a href="../pages/contacto.html"> <button class="button-card-patologias">Lo padezco</button></a>
-            </section>
-            
-            <section class="cardPato">
-                <article id="pieDeAtleta">
-                    <h3 class="title-patologias">El pie de atleta (tinea pedis)</h3>
-                    <img class="img-card-patologias" src="../img/segundaPatologiaa.jpg" alt="pieDeAtleta">
-                    <p class="parrafo-patologias">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni enim laboriosam impedit beatae veniam repellat, in reprehenderit quod necessitatibus repellendus dolorum eligendi possimus accusamus fuga dolores tempora eaque voluptatum maiores.</p>
-                </article>
-                <a href="../pages/contacto.html"> <button class="button-card-patologias">Lo padezco</button></a>
-            </section>
-        
+            <div class="card" style="width: 18rem;">
+                <img src="../img/primeraPatologia.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Infecciones por hongos</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quaerat
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, possimus.</p>
+                    <a href="../pages/contacto.html" class="btn btn-primary ">Lo padezco</a>
+                </div>
+                </div>
 
-            <section class="cardPato">
-                <article id="onicomicosis">
-                    <h3 class="title-patologias">Hongos en uñas (Onicomicosis)</h3>
-                    <img class="img-card-patologias" src="../img/terceraPatologia.png" alt="onicomicosis">
-                    <p class="parrafo-patologias">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum iste qui repudiandae sed eos facilis rerum voluptatibus quo dolore minus similique expedita optio accusantium excepturi, quis suscipit sint adipisci veniam!</p>
-                </article>
-                <a href="../pages/contacto.html"> <button class="button-card-patologias">Lo padezco</button></a>
-            </section>
-            <section class="cardPato">
-                <article id="onicocriptosis">
-                    <h3 class="title-patologias">Uña encarnada (Onicocriptosis)</h3>
-                    <img class="img-card-patologias" src="../img/cuartapatologia.jpg" alt="onicocriptosis">
-                    <p class="parrafo-patologias">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque consequuntur voluptates est error a, quis natus ducimus at minus iusto culpa magni ratione illum magnam molestiae obcaecati ipsam nesciunt vitae.</p>
-                </article>
-                <a href="../pages/contacto.html"> <button class="button-card-patologias">Lo padezco</button></a>
-            </section>
-        
-            <section class="cardPato">
-                <article id="pieDiabetico">
-                    <h3 class="title-patologias">Pie Diabético</h3>
-                    <img class="img-card-patologias" src="../img/quintaPatologiaOtra.jpg" alt="pieDiabetico">
-                    <p class="parrafo-patologias">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ex cum sint sequi reprehenderit excepturi ad dolores libero earum, architecto perferendis quam, a laboriosam sunt obcaecati quasi, exercitationem repellendus minus.</p>
-                </article>
-                <a href="../pages/contacto.html"><button class="button-card-patologias">Lo padezco</button></a>
-            </section>
-            
-            <section class="cardPato">
-                <article id="hiperhidrosis">
-                    <h3 class="title-patologias">Sudoración (Hiperhidrosis)</h3>
-                    <img class="img-card-patologias" src="../img/sextaPatologia.jpg" alt="hiperhidrosis">
-                    <p class="parrafo-patologias">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias deserunt veniam deleniti fugit aut in labore sunt non, eos temporibus inventore soluta ipsum velit delectus neque repudiandae eum ea quibusdam.</p>
-                    <a href="../pages/contacto.html"><button class="button-card-patologias">Lo padezco</button></a>
-                </article>
-            </section>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/segundaPatologiaa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">El pie de atleta (tinea pedis)</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quaerat
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, possimus.</p>
+                        <a href="../pages/contacto.html" class="btn btn-primary ">Lo padezco</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/terceraPatologia.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hongos en uñas (Onicomicosis)</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quaerat
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, possimus.</p>
+                        <a href="../pages/contacto.html" class="btn btn-primary ">Lo padezco</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/cuartapatologia.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Uña encarnada (Onicocriptosis)</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quaerat
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, possimus.</p>
+                        <a href="../pages/contacto.html" class="btn btn-primary ">Lo padezco</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/quintaPatologiaOtra.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pie Diabético</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quaerat
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, possimus.</p>
+                        <a href="../pages/contacto.html" class="btn btn-primary ">Lo padezco</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/sextaPatologia.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sudoración (Hiperhidrosis)</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, quaerat
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, possimus.</p>
+                        <a href="../pages/contacto.html" class="btn btn-primary ">Lo padezco</a>
+                    </div>
+                </div>
         </div>
-       
+
     </main>
     <footer id="footer">
-        <article>
+        <div id="datos-doc">
             <p>todos los derechos reservados</p>
             <p>Dc. Fulanita doc</p>
             <p>N contacto 1234566</p>
-            <p>direccion: Narnia</p>
-        </article>
-        <article class="redessociales">
+        </div>
+        <div class="redesSociales">
             <h4>Seguinos en nuestras redes</h4>
-            <img src="../img/facebook.png" alt="" width="50px">
-            <img src="../img/instagram.png" alt="" width="50px">
-            <img src="../img/twitter.png" alt="" width="50px">
-        </article>
+            <img src="/img/facebook.png" alt="" width="50px" />
+            <img src="/img/instagram.png" alt="" width="50px" />
+            <img src="/img/twitter.png" alt="" width="50px" />
+        </div>
     </footer>
 </body>
 
