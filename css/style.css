@@ -420,6 +420,18 @@
     /*FIN CONTACTO */
 
     /* SOBRE MI */
+    .grid-sobre_mi{
+        margin-bottom: 35%;
+    }
+    .info-parallax{
+        font-size: small;
+        margin-left: 0px;
+        margin-right: 90px;
+    }
+    .card-body{
+        overflow: scroll;
+        font-size: x-small;
+    }
     .padreInformacion{
         flex-direction: column;
     }
