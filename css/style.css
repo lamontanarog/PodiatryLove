@@ -31,18 +31,20 @@
 
 /*banner principal */
 
-.fondo-parallax{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./assets/fondoPrueba.jpg");
+.fondo-parallax-index{
+    background:linear-gradient( rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0.496) ), url('../assets/fondito-parallax.avif') no-repeat center top;;
     background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size:  cover;
-	height:auto;
+	height:500px;
 	width: 100%;
 	position: relative;
 }
 
-.contenido-parallax{
+.contenido-parallax-index{
+    animation: fadeInDown;
+    animation-duration: 4s;
     color:#fff;
     font-family: 'Josefin Sans';
 	font-size: 2rem;
@@ -160,33 +162,41 @@
 #datos-doc{
     letter-spacing: 2px;
     font-weight: lighter;
-    animation: pulse;
-    animation-duration: 5s;
-    animation-delay: 3s;
 
 }
 
 .redesSociales{
     cursor: pointer;
     text-align: center;
-    animation: pulse;
-    animation-duration: 5s;
-    animation-delay: 3s;
 }
 
 /*Fin Footer general */
 
 /*seccion prevencion CON GRID */
-#h1Prevencion{
-    margin: 30px 0px;
-    padding: 15px;
-    text-align: center;
-    font-size: 35px;
-    font-family: 'Ibarra Real Nova', serif;
-    animation: backOutDown;
-    animation-duration: 5s;
-    animation-delay: 1s;
-    
+
+.fondo-parallax-prevencion{
+    background:linear-gradient( rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.496) ), url('../assets/parallax-prevencion.jpg') no-repeat center top;;
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height:500px;
+	width: 100%;
+	position: relative;
+}
+
+.contenido-parallax-prevencion{
+    animation: fadeInDown;
+    animation-duration: 4s;
+    color:#fff;
+    font-family: 'Josefin Sans';
+	font-size: 2rem;
+	font-weight: bold;
+	left: 10%;
+	position: absolute;
+	text-align: center;
+	top:40%;
+	width: 80%
 }
 .padreTarjetasPrevencion{
     display: grid;
@@ -200,6 +210,36 @@
 /*Fin seccion prevencion */
 
 /*Seccion patologias con grid */
+#body-patologias{
+        background: linear-gradient(-45deg, #2C396F, #2980B9, #23a6d5, #85C1E9);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#titulo-patologias{
+    color: white;
+    margin: 30px 0px;
+    padding: 15px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Ibarra Real Nova', serif;
+    animation: backOutDown;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    
+}
 .padreTarjetasPatologias {
     margin: 10px;
     padding: 10px;
@@ -211,6 +251,7 @@
     align-items: center;
 }
 .card {
+    margin-top: 10%;
     text-align: center;
 }
 /*Fin seccion patologias */
@@ -232,7 +273,6 @@
     color: white;
 
 }
-
 #formularioContacto{
     margin-top: 5%;
     display: flex;
@@ -243,14 +283,39 @@
     letter-spacing: 5px;
     
 }
-
 .input {
-    letter-spacing: 5px;
     margin: 1%;
-    width: 40%;
+    width: 50%;
+    height: 30px;
     font-weight: bolder;
+    text-align: center;
+    border-radius: 20px;
+    border-color: #2C396F;
+}
+#textarea{
+    margin: 1%;
+    width: 50%;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 20px;
+    border-color: #2C396F;
+}
+#boton-contacto{
+    height: 40px;
+    width: 250px;
+    left: 95px;
+    border: 0;
+    border-radius: 20px;
+    bottom: -20px;
+    background: #9ED8EB;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 300;
+    outline: none;
+    margin: 0px 15px;
 }
 
+/*
 #buttonForm {
     padding: 15px;
     margin: 0px 15px;
@@ -262,6 +327,7 @@
     background-color: rgb(8, 60, 128);
     cursor: pointer;
 }
+*/
 /*Fin seccion contacto */
 
 /* seccion sobre mi */
@@ -288,16 +354,24 @@
     padding: 5%;
     margin: 2%;
 }
-
+.fondo-parallax-sobre_mi{
+    background:linear-gradient( rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.496) ), url('../assets/parallax-sobre_mi.jpg') no-repeat center top;;
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height:500px;
+	width: 100%;
+	position: relative;
+}
 .contenido-parallax-sobre_mi{
-    display: flex;
-    flex-direction: column;
-    left: 10rem;
-    align-items: flex-end;
+    animation: fadeInDown;
+    animation-duration: 4s;
     color:#fff;
     font-family: 'Josefin Sans';
 	font-size: 2rem;
 	font-weight: bold;
+	left: 10%;
 	position: absolute;
 	text-align: center;
 	top:40%;
@@ -309,6 +383,9 @@
     grid-template-rows: 1,1fr;
     grid-template-columns: repeat(2,1fr);
 }
+.carousel-item{
+    margin-top: 5%;
+}
 /*Fin seccion sobre mi */
 
 
@@ -317,6 +394,10 @@
     /*INDEX*/
     .nav{
         display: block;
+    }
+    .fondo-parallax-index{
+        background-size: none;
+        background-position: none;
     }
     /*menu navegable de patologias INDEX*/
     .article-patologias-menu {
@@ -383,7 +464,23 @@
         height: 25px;
     }
     /* FIN DEL INDEX*/
+
     /*PREVENCION*/
+    .fondo-parallax-prevencion{
+        background:linear-gradient( rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.496) ), url('../assets/parallax-prevencion-mobile.png') no-repeat center top;;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .titulo-parrallax-prevencion{
+        font-size: 16px;
+    text-align: center;
+    }
+    .subtitulo-parrallax-prevencion{
+        font-size: 10px;
+
+    }
     .padreTarjetasPrevencion{
         grid-template-columns: revert;
         row-gap: 30px;
@@ -417,16 +514,15 @@
     textarea.input {
         width: 65%;
     }
+    #boton-contacto{
+        width: 150px;
+        margin-top: 2%;
+    }
     /*FIN CONTACTO */
 
     /* SOBRE MI */
     .grid-sobre_mi{
-        margin-bottom: 35%;
-    }
-    .info-parallax{
-        font-size: small;
-        margin-left: 0px;
-        margin-right: 90px;
+        grid: none;
     }
     .card-body{
         overflow: scroll;
