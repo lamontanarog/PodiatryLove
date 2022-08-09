@@ -148,11 +148,8 @@
 
 /*Footer general */
 #footer{
-    font-family: cursive;
     margin-top: 5%;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
     background: url(../assets/pruebaNuevoFooter.jpg);
     background-position: center;
     background-size: cover;
@@ -160,14 +157,17 @@
 }
 
 #datos-doc{
-    letter-spacing: 2px;
-    font-weight: lighter;
-
+    font-family: monospace;
+    text-align: center;
 }
-
+#datos-doc p {
+    margin-bottom: 0;
+}
 .redesSociales{
     cursor: pointer;
     text-align: center;
+    font-size: 24px;
+    color: white;
 }
 
 /*Fin Footer general */
