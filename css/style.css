@@ -2,63 +2,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Ibarra+Real+Nova:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Ibarra+Real+Nova:ital@0;1&family=Josefin+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Edu+SA+Beginner&family=Ibarra+Real+Nova:ital@0;1&family=Josefin+Sans:wght@300&display=swap');
+
 /*Selector universal*/
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: content-box;
 }
-/*menu navegable*/
 
-.item-menu-gral{
-    text-decoration: none;
-    color: rgba(79, 22, 79, 0.684);
-    font-weight: bold;
-}
-#lista-menu-gral{
-    display: flex;
-    justify-content: space-evenly;
-    list-style:none;
-    cursor: pointer;
-}
-#logo-menu{
-    width: 80px;
-    margin: 0px;
-}
+
 /*Fin menu navegable */
 
 /*Main index */
 
 /*banner principal */
 
-.fondo-parallax-index{
-    background:linear-gradient( rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0.496) ), url('../assets/fondito-parallax.avif') no-repeat center top;;
+.fondo-parallax-index {
+    background: linear-gradient(rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0.496)), url('../assets/fondito-parallax.avif') no-repeat center top;
+    ;
     background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size:  cover;
-	height:500px;
-	width: 100%;
-	position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    position: relative;
 }
 
-.contenido-parallax-index{
+.contenido-parallax-index {
     animation: fadeInDown;
     animation-duration: 4s;
-    color:#fff;
+    color: #fff;
     font-family: 'Josefin Sans';
-	font-size: 2rem;
-	font-weight: bold;
-	left: 10%;
-	position: absolute;
-	text-align: center;
-	top:40%;
-	width: 80%
+    font-size: 2rem;
+    font-weight: bold;
+    left: 10%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 80%
 }
 
 
 /*seccion de patologias index */
-.articlePatologias{
+.articlePatologias {
     padding: 5px;
     margin: 20px;
     text-align: center;
@@ -77,77 +64,28 @@
     letter-spacing: 2px;
     margin: 30px;
 }
+
 /*menu navegable hacia patologias desde index */
 
 .article-patologias-menu {
-    font-size: 20px;
-    letter-spacing: 2px;
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    animation: bounce; 
-    animation-duration: 6s; 
+    animation: bounce;
+    animation-duration: 6s;
     animation-delay: 3s;
 }
 
-#lista_menu_patologias {
-    display: flex;
-    justify-content: space-evenly;
-    list-style:none;
-    /*cursor: pointer;
-    display: flex;
-    list-style:none;
-    cursor: pointer; */
-}
-
-.article-patologias-item {
-    padding: 15px;
-    border: 20px;
-    margin-left: 50px;
-}
 /* fin menu navegable hacia patologias desde index */
 
 /* seccion videos educativos sobre patologias index */
-.videos_educativos_patologias {
-    padding-top: 15px;
-    display: grid;
-    grid-template-rows: 1,1fr;
-    grid-template-columns: repeat(2,1fr);
-    justify-items: center;
-    background-image: url("../assets/pruebaFondoIframes.jpg");
-    background-position: center;
-    background-size: cover;
-}
 
-.info-iframe{
+.info-iframe {
     color: black;
 }
 
-.subt_iframe {
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
-    color: rgb(255, 255, 255);
-}
-
-.button_iframe {
-    margin: 20px 0px 20px 40%;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 6px;
-    border-color: rgba(0, 0, 0, 0.566);
-    color: rgb(255, 255, 255);
-    background-color: rgb(8, 60, 128);
-    cursor: pointer;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-}
 /* fin seccion videos educativos sobre patologias index */
 /*Fin main index */
 
 /*Footer general */
-#footer{
+#footer {
     margin-top: 5%;
     padding: 20px;
     background: url(../assets/pruebaNuevoFooter.jpg);
@@ -156,52 +94,55 @@
     color: white;
 }
 
-#datos-doc{
+#datos-doc {
     font-family: monospace;
     text-align: center;
 }
+
 #datos-doc p {
     margin-bottom: 0;
 }
-.redesSociales{
+
+.redesSociales {
     cursor: pointer;
     text-align: center;
     font-size: 24px;
-    color: white;
 }
 
 /*Fin Footer general */
 
 /*seccion prevencion CON GRID */
 
-.fondo-parallax-prevencion{
-    background:linear-gradient( rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.496) ), url('../assets/parallax-prevencion.jpg') no-repeat center top;;
+.fondo-parallax-prevencion {
+    background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.496)), url('../assets/parallax-prevencion.jpg') no-repeat center top;
+    ;
     background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size:  cover;
-	height:500px;
-	width: 100%;
-	position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    position: relative;
 }
 
-.contenido-parallax-prevencion{
+.contenido-parallax-prevencion {
     animation: fadeInDown;
     animation-duration: 4s;
-    color:#fff;
+    color: #fff;
     font-family: 'Josefin Sans';
-	font-size: 2rem;
-	font-weight: bold;
-	left: 10%;
-	position: absolute;
-	text-align: center;
-	top:40%;
-	width: 80%
+    font-size: 2rem;
+    font-weight: bold;
+    left: 10%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 80%
 }
-.padreTarjetasPrevencion{
+
+.padreTarjetasPrevencion {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, fr);
     row-gap: 20px;
     justify-items: center;
 }
@@ -210,25 +151,28 @@
 /*Fin seccion prevencion */
 
 /*Seccion patologias con grid */
-#body-patologias{
-        background: linear-gradient(-45deg, #2C396F, #2980B9, #23a6d5, #85C1E9);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
-        height: 100vh;
-}
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+#body-patologias {
+    background: linear-gradient(-45deg, #2C396F, #2980B9, #23a6d5, #85C1E9);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
 }
 
-#titulo-patologias{
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#titulo-patologias {
     color: white;
     margin: 30px 0px;
     padding: 15px;
@@ -238,22 +182,25 @@
     animation: backOutDown;
     animation-duration: 5s;
     animation-delay: 1s;
-    
+
 }
+
 .padreTarjetasPatologias {
     margin: 10px;
     padding: 10px;
     display: grid;
-    grid-template-rows: repeat(3,fr);
-    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, fr);
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 25px;
     justify-items: center;
     align-items: center;
 }
+
 .card {
     margin-top: 10%;
     text-align: center;
 }
+
 /*Fin seccion patologias */
 
 /*seccion contacto */
@@ -265,7 +212,8 @@
     animation-duration: 3s;
 
 }
-#contenedor-form{
+
+#contenedor-form {
     background: url(../assets/pruebaFondoIframes.jpg);
     background-size: cover;
     padding-top: 2%;
@@ -273,7 +221,8 @@
     color: white;
 
 }
-#formularioContacto{
+
+#formularioContacto {
     margin-top: 5%;
     display: flex;
     flex-direction: column;
@@ -281,8 +230,9 @@
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
     letter-spacing: 5px;
-    
+
 }
+
 .input {
     margin: 1%;
     width: 50%;
@@ -292,7 +242,8 @@
     border-radius: 20px;
     border-color: #2C396F;
 }
-#textarea{
+
+#textarea {
     margin: 1%;
     width: 50%;
     font-weight: bolder;
@@ -300,7 +251,8 @@
     border-radius: 20px;
     border-color: #2C396F;
 }
-#boton-contacto{
+
+#boton-contacto {
     height: 40px;
     width: 250px;
     left: 95px;
@@ -315,90 +267,63 @@
     margin: 0px 15px;
 }
 
-/*
-#buttonForm {
-    padding: 15px;
-    margin: 0px 15px;
-    font-size: 15px;
-    font-weight: bolder;
-    border-radius: 6px;
-    border-color: rgba(0, 0, 0, 0.566);
-    color: rgb(255, 255, 255);
-    background-color: rgb(8, 60, 128);
-    cursor: pointer;
-}
-*/
 /*Fin seccion contacto */
 
 /* seccion sobre mi */
-#imgSobreMi {
-    width: 100%;
-}
 
-.padreInformacion {
-    margin: 10%;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-}
-.imgInformacion{
-    width: 100%;
-    margin-bottom: 5%;
-}
-
-.cardAboutMe {
-    color: rgb(8, 60, 128);
-    font-weight: bolder;
-    width: 30%;
-    border-style: groove;
-    padding: 5%;
-    margin: 2%;
-}
-.fondo-parallax-sobre_mi{
-    background:linear-gradient( rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.496) ), url('../assets/parallax-sobre_mi.jpg') no-repeat center top;;
+.fondo-parallax-sobre_mi {
+    background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.496)), url('../assets/parallax-sobre_mi.jpg') no-repeat center top;
+    ;
     background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size:  cover;
-	height:500px;
-	width: 100%;
-	position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    position: relative;
 }
-.contenido-parallax-sobre_mi{
+
+.contenido-parallax-sobre_mi {
     animation: fadeInDown;
     animation-duration: 4s;
-    color:#fff;
+    color: #fff;
     font-family: 'Josefin Sans';
-	font-size: 2rem;
-	font-weight: bold;
-	left: 10%;
-	position: absolute;
-	text-align: center;
-	top:40%;
-	width: 80%
+    font-size: 2rem;
+    font-weight: bold;
+    left: 10%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 80%
 }
-.grid-sobre_mi{
+
+.grid-sobre_mi {
     margin-top: 5%;
     display: grid;
-    grid-template-rows: 1,1fr;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1, 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
-.carousel-item{
+
+.carousel-item {
     margin-top: 5%;
 }
+
 /*Fin seccion sobre mi */
 
 
 /*css para mobile */
 @media only screen and (max-width: 576px) {
+
     /*INDEX*/
-    .nav{
+    .nav {
         display: block;
     }
-    .fondo-parallax-index{
+
+    .fondo-parallax-index {
         background-size: none;
         background-position: none;
     }
+
     /*menu navegable de patologias INDEX*/
     .article-patologias-menu {
         font-size: 15px;
@@ -406,134 +331,120 @@
         justify-content: center;
         font-weight: bolder;
     }
-    #lista_menu_patologias{
-       flex-wrap: wrap;
+
+    #lista_menu_patologias {
+        flex-wrap: wrap;
     }
-    .hiperv_nav_patologias{
-        padding: 0px;
-        font-size: small;
-    }
-        /* carrousel */
-        .d-block{
+
+    /* carrousel */
+    .d-block {
         height: 100%;
         width: 100%;
-        }
-    
+    }
+
     /*seccion videos educativos*/
-    
-    .videos_educativos_patologias{
+
+    .videos_educativos_patologias {
         grid-template-columns: revert;
         row-gap: 2%;
         padding-bottom: 20px;
     }
-    .video-iframe{
-        width: 100%;
-        height: 50%;
-    }
-    .subt_iframe {
-        margin-top: 15px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    .button_iframe{
-        margin-left: 30%;
-        margin-bottom: 15%;
-    }
 
     /* footer */
-    #footer{
+    #footer {
         padding: 0px;
         text-align: center;
     }
-    #datos-doc{
+
+    #datos-doc {
         padding-top: 3%;
         font-size: 12px;
         margin: 0px;
     }
 
-    .redesSociales h4{
-        padding-top: 4%;
-        padding-bottom: 11%;
-        margin-bottom: 10px;
-        font-size: 12px;
-        letter-spacing: 2px;
-    }
-    
-    .redesSociales img {
-        padding-right: 5%;
-        width: 25px;
-        height: 25px;
-    }
     /* FIN DEL INDEX*/
 
     /*PREVENCION*/
-    .fondo-parallax-prevencion{
-        background:linear-gradient( rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.496) ), url('../assets/parallax-prevencion-mobile.png') no-repeat center top;;
+    .fondo-parallax-prevencion {
+        background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.496)), url('../assets/parallax-prevencion-mobile.png') no-repeat center top;
+        ;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .titulo-parrallax-prevencion{
+
+    .titulo-parrallax-prevencion {
         font-size: 16px;
-    text-align: center;
+        text-align: center;
     }
-    .subtitulo-parrallax-prevencion{
+
+    .subtitulo-parrallax-prevencion {
         font-size: 10px;
 
     }
-    .padreTarjetasPrevencion{
+
+    .padreTarjetasPrevencion {
         grid-template-columns: revert;
         row-gap: 30px;
         justify-content: center;
         text-align: center;
     }
+
     /* FIN PREVENCION*/
 
     /*PATOLOGIAS*/
-    .padreTarjetasPatologias{
+    .padreTarjetasPatologias {
         grid-template-columns: revert;
         justify-content: center;
     }
-    .title-patologias{
+
+    .title-patologias {
         margin-left: 65px;
     }
+
     /* FIN PATOLOGIAS*/
 
     /* CONTACTO */
-    #imgContacto{
+    #imgContacto {
         margin: 0px;
         width: 100%;
     }
-    #contenedor-form{
+
+    #contenedor-form {
         padding-top: 10%;
         padding-bottom: 20%;
     }
-    .input{
+
+    .input {
         letter-spacing: 1px;
     }
+
     textarea.input {
         width: 65%;
     }
-    #boton-contacto{
+
+    #boton-contacto {
         width: 150px;
         margin-top: 2%;
     }
+
     /*FIN CONTACTO */
 
     /* SOBRE MI */
-    .grid-sobre_mi{
+    .grid-sobre_mi {
         grid: none;
     }
-    .card-body{
+
+    .card-body {
         overflow: scroll;
         font-size: x-small;
     }
-    .padreInformacion{
-        flex-direction: column;
-    }
-    .cardAboutMe{
+
+    .cardAboutMe {
         width: 85%;
         margin: auto;
     }
+
     /* FIN SOBRE MI */
 }
