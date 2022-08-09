@@ -260,9 +260,9 @@
     border-radius: 20px;
     bottom: -20px;
     background: #9ED8EB;
-    color: white;
+    color: #2C396F;
+    font-weight: bolder;
     font-size: 1.1rem;
-    font-weight: 300;
     outline: none;
     margin: 0px 15px;
 }
