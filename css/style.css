@@ -3,9 +3,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Ibarra+Real+Nova:ital@0;1&family=Josefin+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Edu+SA+Beginner&family=Ibarra+Real+Nova:ital@0;1&family=Josefin+Sans:wght@300&display=swap");
 /* Variables SASS */
-/*Backgrounds */
 /*Colores */
+/*Maps*/
 /*Fonts*/
+/* extend */
+#formularioContacto input, #formularioContacto textarea {
+  margin: 1%;
+  width: 50%;
+  height: 30px;
+  font-weight: bolder;
+  text-align: center;
+  border-radius: 20px;
+  border-color: #2C396F; }
+
+/*mixin */
+/*Backgrounds */
 /*Selector universal*/
 * {
   margin: 0px;
@@ -186,21 +198,6 @@
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   letter-spacing: 5px; }
-  #formularioContacto input {
-    margin: 1%;
-    width: 50%;
-    height: 30px;
-    font-weight: bolder;
-    text-align: center;
-    border-radius: 20px;
-    border-color: #2C396F; }
-  #formularioContacto textarea {
-    margin: 1%;
-    width: 50%;
-    font-weight: bolder;
-    text-align: center;
-    border-radius: 20px;
-    border-color: #2C396F; }
   #formularioContacto #boton-contacto {
     height: 40px;
     width: 250px;

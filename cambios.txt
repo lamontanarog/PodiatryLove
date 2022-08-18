@@ -1,0 +1,25 @@
+Desafio sass II + SEO
+
+Los titulos de mis diferentes paginas quedaron de la siguiente manera:
+PodiatryLove - Home.
+PodiatryLove - Prevencion.
+PodiatryLove - Patologias.
+PodiatryLove - Contacto.
+PodiatryLove - Sobre mi.
+
+En todas mis paginas agregue una etiqueta meta description con lo siguiente:
+"Centro podologico especializado en el bienestar del paciente."
+
+Por otra parte,en las paginas PodiatryLove - Home, -Contacto y -Sobre mi; Agregue una etiqueta meta Keywords con las siguientes: 
+
+"PODOLOGIA,PODOLOGA,PIE DIABETICO, ULCERAS, ENFERMEDAD EN EL PIE, INFECCION EN EL PIE, PIES, DOLOR EN EL PIE, PATOLOGIAS PODOLOGICAS."
+
+En cambio, en la pagina PodiatryLove - Prevencion, agregue las siguientes Keywords:
+"PODOLOGIA,PODOLOGA,PIE DIABETICO, ULCERAS, ENFERMEDAD EN EL PIE, INFECCION EN EL PIE, PIES, DOLOR EN EL PIE, PATOLOGIAS PODOLOGICAS, COMO CURAR PIES."
+
+Y en la pagina PodiatryLove - Patologias, agregue las siguientes Keywords:
+
+"PODOLOGIA,PODOLOGA,PIE DIABETICO,HIPERHIDROSIS, HIPERQUERATOSIS, TINEA PEDIS,ONICOMICOSIS, ONICOCRIPTOSIS, ULCERAS, ENFERMEDAD EN EL PIE,
+   INFECCION EN EL PIE, PIES, DOLOR EN EL PIE, PATOLOGIAS PODOLOGICAS.".
+
+

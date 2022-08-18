@@ -4,17 +4,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Edu+SA+Beginner&family=Ibarra+Real+Nova:ital@0;1&family=Josefin+Sans:wght@300&display=swap');
 
 /* Variables SASS */
-/*Backgrounds */
-$fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
-
 /*Colores */
-
 $azulcito-contacto: #2C396F;
 $background-input-contacto: #fff;
 $background-boton-contacto: #9ED8EB;
 
+/*Maps*/
+$paleta-azul: (
+        "azul-fuerte":$azulcito-contacto,
+        "background-blanco" : $background-input-contacto,
+        "background-boton" : $background-boton-contacto,
+);
 /*Fonts*/
 $font-contacto: 'Josefin Sans', sans-serif;
+
+/* extend */
+%contenido-form {
+    margin: 1%;
+    width: 50%;
+    height: 30px;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 20px;
+    border-color: map-get($paleta-azul, "azul-fuerte");
+}
+/*mixin */
+@mixin parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+/*Backgrounds */
+$fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
+
+
 
 /*Selector universal*/
 * {
@@ -33,13 +60,7 @@ $font-contacto: 'Josefin Sans', sans-serif;
 .fondo-parallax-index {
     background: linear-gradient(rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0.496)), url('../assets/fondito-parallax.avif') no-repeat center top;
     ;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    width: 100%;
-    position: relative;
+    @include parallax;
 }
 
 .contenido-parallax-index {
@@ -129,13 +150,7 @@ $font-contacto: 'Josefin Sans', sans-serif;
 .fondo-parallax-prevencion {
     background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.496)), url('../assets/parallax-prevencion.jpg') no-repeat center top;
     ;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    width: 100%;
-    position: relative;
+    @include parallax;
 }
 
 .contenido-parallax-prevencion {
@@ -231,7 +246,7 @@ $font-contacto: 'Josefin Sans', sans-serif;
     background-size: cover;
     padding-top: 2%;
     padding-bottom: 3%;
-    color: $background-input-contacto;
+    color: map-get($paleta-azul, "background-blanco" );
 
 }
 
@@ -245,22 +260,11 @@ $font-contacto: 'Josefin Sans', sans-serif;
     letter-spacing: 5px;
 
     input {
-        margin: 1%;
-        width: 50%;
-        height: 30px;
-        font-weight: bolder;
-        text-align: center;
-        border-radius: 20px;
-        border-color: $azulcito-contacto;
+        @extend %contenido-form;
     }
 
     textarea {
-        margin: 1%;
-        width: 50%;
-        font-weight: bolder;
-        text-align: center;
-        border-radius: 20px;
-        border-color: $azulcito-contacto;
+        @extend %contenido-form;
     }
 
     #boton-contacto {
@@ -270,8 +274,8 @@ $font-contacto: 'Josefin Sans', sans-serif;
         border: 0;
         border-radius: 20px;
         bottom: -20px;
-        background: $background-boton-contacto;
-        color: $azulcito-contacto;
+        background: map-get($paleta-azul, "background-boton" );
+        color: map-get($paleta-azul, "azul-fuerte" );
         font-weight: bolder;
         font-size: 1.1rem;
         outline: none;
@@ -287,13 +291,7 @@ $font-contacto: 'Josefin Sans', sans-serif;
 .fondo-parallax-sobre_mi {
     background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.496)), url('../assets/parallax-sobre_mi.jpg') no-repeat center top;
     ;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    width: 100%;
-    position: relative;
+    @include parallax;
 }
 
 .contenido-parallax-sobre_mi {
