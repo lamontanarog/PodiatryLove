@@ -10,8 +10,9 @@
 #formularioContacto input, #formularioContacto textarea {
   margin: 1%;
   width: 50%;
-  height: 30px;
+  height: 50px;
   font-weight: bolder;
+  letter-spacing: 1px;
   text-align: center;
   border-radius: 20px;
   border-color: #2C396F; }
@@ -33,7 +34,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 600px;
   width: 100%;
   position: relative; }
 
@@ -74,6 +75,10 @@
   animation-duration: 6s;
   animation-delay: 3s; }
 
+.nav-item {
+  font-weight: 500;
+  font-size: larger; }
+
 /* fin menu navegable hacia patologias desde index */
 /* seccion videos educativos sobre patologias index */
 .info-iframe {
@@ -89,18 +94,15 @@
   background-position: center;
   background-size: cover;
   color: white; }
-
-#datos-doc {
-  font-family: monospace;
-  text-align: center; }
-
-#datos-doc p {
-  margin-bottom: 0; }
-
-.redesSociales {
-  cursor: pointer;
-  text-align: center;
-  font-size: 24px; }
+  #footer #datos-doc {
+    font-family: monospace;
+    text-align: center; }
+    #footer #datos-doc p {
+      margin-bottom: 0; }
+  #footer .redesSociales {
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px; }
 
 /*Fin Footer general */
 /*seccion prevencion CON GRID */
@@ -110,7 +112,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 600px;
   width: 100%;
   position: relative; }
 
@@ -137,7 +139,7 @@
 /*Fin seccion prevencion */
 /*Seccion patologias con grid */
 #body-patologias {
-  background: linear-gradient(-45deg, #2C396F, #2980B9, #23a6d5, #85C1E9);
+  background: linear-gradient(87deg, #2C396F, #2980B9, #23a6d5, #85C1E9);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh; }
@@ -174,6 +176,13 @@
 .card {
   margin-top: 10%;
   text-align: center; }
+  .card .card-title {
+    font-weight: 500;
+    font-style: oblique;
+    color: #2C396F;
+    font-size: 25px; }
+  .card .card-text {
+    font-weight: 500; }
 
 /*Fin seccion patologias */
 /*seccion contacto */
@@ -210,7 +219,7 @@
     font-weight: bolder;
     font-size: 1.1rem;
     outline: none;
-    margin: 0px 15px; }
+    margin: 5px 15px; }
 
 /*Fin seccion contacto */
 /* seccion sobre mi */
@@ -220,7 +229,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 600px;
   width: 100%;
   position: relative; }
 
@@ -258,7 +267,6 @@
   /*menu navegable de patologias INDEX*/
   .article-patologias-menu {
     font-size: 15px;
-    margin-left: 30px;
     justify-content: center;
     font-weight: bolder; }
   #lista_menu_patologias {
@@ -305,6 +313,11 @@
     justify-content: center; }
   .title-patologias {
     margin-left: 65px; }
+  .card .card-title {
+    font-size: 25px; }
+  .card .card-text {
+    font-size: large;
+    font-weight: 400; }
   /* FIN PATOLOGIAS*/
   /* CONTACTO */
   #imgContacto {

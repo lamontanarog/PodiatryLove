@@ -11,9 +11,9 @@ $background-boton-contacto: #9ED8EB;
 
 /*Maps*/
 $paleta-azul: (
-        "azul-fuerte":$azulcito-contacto,
-        "background-blanco" : $background-input-contacto,
-        "background-boton" : $background-boton-contacto,
+    "azul-fuerte":$azulcito-contacto,
+    "background-blanco" : $background-input-contacto,
+    "background-boton" : $background-boton-contacto,
 );
 /*Fonts*/
 $font-contacto: 'Josefin Sans', sans-serif;
@@ -22,22 +22,25 @@ $font-contacto: 'Josefin Sans', sans-serif;
 %contenido-form {
     margin: 1%;
     width: 50%;
-    height: 30px;
+    height: 50px;
     font-weight: bolder;
+    letter-spacing: 1px;
     text-align: center;
     border-radius: 20px;
     border-color: map-get($paleta-azul, "azul-fuerte");
 }
+
 /*mixin */
 @mixin parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 600px;
     width: 100%;
     position: relative;
 }
+
 /*Backgrounds */
 $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
 
@@ -107,6 +110,11 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     animation-delay: 3s;
 }
 
+.nav-item {
+    font-weight: 500;
+    font-size: larger;
+}
+
 /* fin menu navegable hacia patologias desde index */
 
 /* seccion videos educativos sobre patologias index */
@@ -126,21 +134,21 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     background-position: center;
     background-size: cover;
     color: white;
-}
 
-#datos-doc {
-    font-family: monospace;
-    text-align: center;
-}
+    #datos-doc {
+        font-family: monospace;
+        text-align: center;
 
-#datos-doc p {
-    margin-bottom: 0;
-}
+        p {
+            margin-bottom: 0;
+        }
+    }
 
-.redesSociales {
-    cursor: pointer;
-    text-align: center;
-    font-size: 24px;
+    .redesSociales {
+        cursor: pointer;
+        text-align: center;
+        font-size: 24px;
+    }
 }
 
 /*Fin Footer general */
@@ -180,7 +188,7 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
 
 /*Seccion patologias con grid */
 #body-patologias {
-    background: linear-gradient(-45deg, #2C396F, #2980B9, #23a6d5, #85C1E9);
+    background: linear-gradient(87deg, #2C396F, #2980B9, #23a6d5, #85C1E9);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;
@@ -227,6 +235,17 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
 .card {
     margin-top: 10%;
     text-align: center;
+
+    .card-title {
+        font-weight: 500;
+        font-style: oblique;
+        color: $azulcito-contacto;
+        font-size: 25px;
+    }
+
+    .card-text {
+        font-weight: 500;
+    }
 }
 
 /*Fin seccion patologias */
@@ -246,7 +265,7 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     background-size: cover;
     padding-top: 2%;
     padding-bottom: 3%;
-    color: map-get($paleta-azul, "background-blanco" );
+    color: map-get($paleta-azul, "background-blanco");
 
 }
 
@@ -274,12 +293,12 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
         border: 0;
         border-radius: 20px;
         bottom: -20px;
-        background: map-get($paleta-azul, "background-boton" );
-        color: map-get($paleta-azul, "azul-fuerte" );
+        background: map-get($paleta-azul, "background-boton");
+        color: map-get($paleta-azul, "azul-fuerte");
         font-weight: bolder;
         font-size: 1.1rem;
         outline: none;
-        margin: 0px 15px;
+        margin: 5px 15px;
     }
 }
 
@@ -338,7 +357,6 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     /*menu navegable de patologias INDEX*/
     .article-patologias-menu {
         font-size: 15px;
-        margin-left: 30px;
         justify-content: center;
         font-weight: bolder;
     }
@@ -412,6 +430,17 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
 
     .title-patologias {
         margin-left: 65px;
+    }
+
+    .card {
+        .card-title {
+            font-size: 25px;
+        }
+
+        .card-text {
+            font-size: large;
+            font-weight: 400;
+        }
     }
 
     /* FIN PATOLOGIAS*/
