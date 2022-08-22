@@ -255,6 +255,10 @@
 .carousel-item {
   margin-top: 5%; }
 
+.card-body-aboutme {
+  overflow-y: scroll;
+  scroll-behavior: smooth; }
+
 /*Fin seccion sobre mi */
 /*css para mobile */
 @media only screen and (max-width: 576px) {

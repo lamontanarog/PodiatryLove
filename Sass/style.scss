@@ -338,6 +338,10 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     margin-top: 5%;
 }
 
+.card-body-aboutme{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
 /*Fin seccion sobre mi */
 
 
