@@ -17,7 +17,6 @@ $paleta-azul: (
 );
 /*Fonts*/
 $font-contacto: 'Josefin Sans', sans-serif;
-
 /* extend */
 %contenido-form {
     margin: 1%;
@@ -29,7 +28,6 @@ $font-contacto: 'Josefin Sans', sans-serif;
     border-radius: 20px;
     border-color: map-get($paleta-azul, "azul-fuerte");
 }
-
 /*mixin */
 @mixin parallax {
     background-attachment: fixed;
@@ -40,32 +38,22 @@ $font-contacto: 'Josefin Sans', sans-serif;
     width: 100%;
     position: relative;
 }
-
 /*Backgrounds */
 $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
-
-
-
 /*Selector universal*/
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: content-box;
 }
-
-
 /*Fin menu navegable */
-
 /*Main index */
-
 /*banner principal */
-
 .fondo-parallax-index {
     background: linear-gradient(rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0.496)), url('../assets/fondito-parallax.avif') no-repeat center top;
     ;
     @include parallax;
 }
-
 .contenido-parallax-index {
     animation: fadeInDown;
     animation-duration: 4s;
@@ -79,15 +67,12 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     top: 40%;
     width: 80%
 }
-
-
 /*seccion de patologias index */
 .articlePatologias {
     padding: 5px;
     margin: 20px;
     text-align: center;
 }
-
 .article-patologias-title {
     font-size: 30px;
     margin-bottom: 20px;
@@ -95,37 +80,28 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     font-family: 'Ibarra Real Nova', serif;
     word-spacing: -1px;
 }
-
 .article-patologias-subtitle {
     font-size: 20px;
     letter-spacing: 2px;
     margin: 30px;
 }
-
 /*menu navegable hacia patologias desde index */
-
 .article-patologias-menu {
     animation: bounce;
     animation-duration: 6s;
     animation-delay: 3s;
 }
-
 .nav-item {
     font-weight: 500;
     font-size: larger;
 }
-
 /* fin menu navegable hacia patologias desde index */
-
 /* seccion videos educativos sobre patologias index */
-
 .info-iframe {
     color: black;
 }
-
 /* fin seccion videos educativos sobre patologias index */
 /*Fin main index */
-
 /*Footer general */
 #footer {
     margin-top: 5%;
@@ -134,16 +110,13 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     background-position: center;
     background-size: cover;
     color: white;
-
     #datos-doc {
         font-family: monospace;
         text-align: center;
-
         p {
             margin-bottom: 0;
         }
     }
-
     .redesSociales {
         cursor: pointer;
         text-align: center;
@@ -152,15 +125,12 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
 }
 
 /*Fin Footer general */
-
 /*seccion prevencion CON GRID */
-
 .fondo-parallax-prevencion {
     background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.496)), url('../assets/parallax-prevencion.jpg') no-repeat center top;
     ;
     @include parallax;
 }
-
 .contenido-parallax-prevencion {
     animation: fadeInDown;
     animation-duration: 4s;
@@ -174,7 +144,6 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     top: 40%;
     width: 80%
 }
-
 .padreTarjetasPrevencion {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -183,9 +152,7 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     justify-items: center;
 }
 
-
 /*Fin seccion prevencion */
-
 /*Seccion patologias con grid */
 #body-patologias {
     background: linear-gradient(87deg, #2C396F, #2980B9, #23a6d5, #85C1E9);
@@ -193,21 +160,17 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     animation: gradient 15s ease infinite;
     height: 100vh;
 }
-
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
     }
-
     50% {
         background-position: 100% 50%;
     }
-
     100% {
         background-position: 0% 50%;
     }
 }
-
 #titulo-patologias {
     color: white;
     margin: 30px 0px;
@@ -218,9 +181,7 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     animation: backOutDown;
     animation-duration: 5s;
     animation-delay: 1s;
-
 }
-
 .padreTarjetasPatologias {
     margin: 10px;
     padding: 10px;
@@ -231,44 +192,34 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     justify-items: center;
     align-items: center;
 }
-
 .card {
     margin-top: 10%;
     text-align: center;
-
     .card-title {
         font-weight: 500;
         font-style: oblique;
         color: $azulcito-contacto;
         font-size: 25px;
     }
-
     .card-text {
         font-weight: 500;
     }
 }
-
 /*Fin seccion patologias */
-
 /*seccion contacto */
-
 #contenedor-banner-contacto {
     display: flex;
     justify-content: center;
     animation: bounceInDown;
     animation-duration: 3s;
-
 }
-
 #contenedor-form {
     background: $fondo-form-contacto;
     background-size: cover;
     padding-top: 2%;
     padding-bottom: 3%;
     color: map-get($paleta-azul, "background-blanco");
-
 }
-
 #formularioContacto {
     margin-top: 5%;
     display: flex;
@@ -277,15 +228,12 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     font-family: $font-contacto;
     font-weight: bold;
     letter-spacing: 5px;
-
     input {
         @extend %contenido-form;
     }
-
     textarea {
         @extend %contenido-form;
     }
-
     #boton-contacto {
         height: 40px;
         width: 250px;
@@ -301,18 +249,13 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
         margin: 5px 15px;
     }
 }
-
-
 /*Fin seccion contacto */
-
 /* seccion sobre mi */
-
 .fondo-parallax-sobre_mi {
     background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.496)), url('../assets/parallax-sobre_mi.jpg') no-repeat center top;
     ;
     @include parallax;
 }
-
 .contenido-parallax-sobre_mi {
     animation: fadeInDown;
     animation-duration: 4s;
@@ -326,77 +269,61 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     top: 40%;
     width: 80%
 }
-
 .grid-sobre_mi {
     margin-top: 5%;
     display: grid;
     grid-template-rows: 1, 1fr;
     grid-template-columns: repeat(2, 1fr);
 }
-
 .carousel-item {
     margin-top: 5%;
 }
-
-.card-body-aboutme{
+.card-body-aboutme {
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
 /*Fin seccion sobre mi */
-
-
 /*css para mobile */
 @media only screen and (max-width: 576px) {
-
     /*INDEX*/
     .nav {
         display: block;
     }
-
     .fondo-parallax-index {
         background-size: none;
         background-position: none;
     }
-
     /*menu navegable de patologias INDEX*/
     .article-patologias-menu {
         font-size: 15px;
         justify-content: center;
         font-weight: bolder;
     }
-
     #lista_menu_patologias {
         flex-wrap: wrap;
     }
-
     /* carrousel */
     .d-block {
         height: 100%;
         width: 100%;
     }
-
     /*seccion videos educativos*/
-
     .videos_educativos_patologias {
         grid-template-columns: revert;
         row-gap: 2%;
         padding-bottom: 20px;
     }
-
     /* footer */
     #footer {
         padding: 0px;
         text-align: center;
     }
-
     #datos-doc {
         padding-top: 3%;
         font-size: 12px;
         margin: 0px;
     }
-
     /* FIN DEL INDEX*/
-
     /*PREVENCION*/
     .fondo-parallax-prevencion {
         background: linear-gradient(rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.496)), url('../assets/parallax-prevencion-mobile.png') no-repeat center top;
@@ -406,89 +333,69 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }
-
     .titulo-parrallax-prevencion {
         font-size: 16px;
         text-align: center;
     }
-
     .subtitulo-parrallax-prevencion {
         font-size: 10px;
-
     }
-
     .padreTarjetasPrevencion {
         grid-template-columns: revert;
         row-gap: 30px;
         justify-content: center;
         text-align: center;
     }
-
     /* FIN PREVENCION*/
-
     /*PATOLOGIAS*/
     .padreTarjetasPatologias {
         grid-template-columns: revert;
         justify-content: center;
     }
-
     .title-patologias {
         margin-left: 65px;
     }
-
     .card {
         .card-title {
             font-size: 25px;
         }
-
         .card-text {
             font-size: large;
             font-weight: 400;
         }
     }
-
     /* FIN PATOLOGIAS*/
-
     /* CONTACTO */
     #imgContacto {
         margin: 0px;
         width: 100%;
     }
-
     #contenedor-form {
         padding-top: 10%;
         padding-bottom: 20%;
     }
-
     .input {
         letter-spacing: 1px;
     }
-
     textarea.input {
         width: 65%;
     }
-
     #boton-contacto {
         width: 150px;
         margin-top: 2%;
     }
-
     /*FIN CONTACTO */
-
     /* SOBRE MI */
     .grid-sobre_mi {
         grid: none;
     }
-
     .card-body {
         overflow: scroll;
         font-size: x-small;
     }
-
     .cardAboutMe {
         width: 85%;
         margin: auto;
     }
-
     /* FIN SOBRE MI */
 }
