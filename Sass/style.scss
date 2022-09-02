@@ -283,6 +283,47 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     scroll-behavior: smooth;
 }
 /*Fin seccion sobre mi */
+
+/*
+@media only screen and (min-width: 901px) and (max-didth: 924px) {
+    .padreTarjetasPrevencion{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+*/
+
+@media only screen and (min-width: 820px) and (max-width:1099px) {
+    .padreTarjetasPrevencion{
+        grid-template-columns: repeat(2,1fr);
+}
+.padreTarjetasPatologias{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+
+
+@media only screen and (min-width: 577px) and (max-width: 819px) {
+    .padreTarjetasPrevencion{
+        grid-template-columns: revert;
+    }
+    .padreTarjetasPatologias{
+        grid-template-columns: revert;
+    }
+
+    #imgContacto{
+        width: 100%;
+    }
+
+    #contenedor-banner-contacto{
+        padding-bottom: 5%;
+    }
+}
+
+#contenedor-form{
+    padding-bottom: 5%;
+}
+
 /*css para mobile */
 @media only screen and (max-width: 576px) {
     /*INDEX*/
@@ -372,7 +413,7 @@ $fondo-form-contacto: url(../assets/pruebaFondoIframes.jpg);
     }
     #contenedor-form {
         padding-top: 10%;
-        padding-bottom: 20%;
+        padding-bottom: 41%;
     }
     .input {
         letter-spacing: 1px;
